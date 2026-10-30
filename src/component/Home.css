@@ -1,0 +1,313 @@
+/* =========================================================
+   BWU QUIZ - SIMPLE & CLEAN COLLEGE FRONT PAGE
+========================================================= */
+
+.home-page {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  color: #212529;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------------------------------------
+   1. UNIVERSITY HEADER
+--------------------------------------------------------- */
+.university-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #0d6efd;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.univ-badge {
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+.header-brand h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #0d6efd;
+}
+
+.header-brand p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Common Buttons */
+.btn {
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-outline:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-dark {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #343a40;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 16px;
+  padding: 11px;
+}
+
+/* ---------------------------------------------------------
+   2. MAIN CONTENT AREA
+--------------------------------------------------------- */
+.home-main {
+  flex: 1;
+  max-width: 1050px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-left: 5px solid #0d6efd;
+  border-radius: 6px;
+  padding: 24px 28px;
+  margin-bottom: 26px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.welcome-banner h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #212529;
+}
+
+.welcome-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   3. LOGIN CARDS (STUDENT & ADMIN)
+--------------------------------------------------------- */
+.login-choice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 768px) {
+  .login-choice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.choice-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 26px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.choice-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.choice-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #212529;
+}
+
+.choice-card p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.feature-list {
+  margin: 0 0 auto;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #495057;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   4. AVAILABLE SUBJECTS
+--------------------------------------------------------- */
+.subjects-section {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin-bottom: 26px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.subjects-section h3 {
+  margin: 0 0 16px;
+  font-size: 17px;
+  color: #212529;
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 10px;
+}
+
+.subject-box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.subject-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.box-icon {
+  font-size: 24px;
+}
+
+.subject-box strong {
+  font-size: 15px;
+  color: #212529;
+}
+
+.subject-box small {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* ---------------------------------------------------------
+   5. PROJECT INFO / ARCHITECTURE
+--------------------------------------------------------- */
+.info-section {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin-bottom: 26px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.info-section h3 {
+  margin: 0 0 16px;
+  font-size: 17px;
+  color: #212529;
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.info-box strong {
+  font-size: 14px;
+  color: #0d6efd;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------------------------
+   6. FOOTER
+--------------------------------------------------------- */
+.university-footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 18px 20px;
+  text-align: center;
+  border-top: 2px solid #0d6efd;
+  font-size: 13px;
+}
+
+.university-footer p {
+  margin: 4px 0;
+}
+
+.credit-text {
+  color: #adb5bd;
+}
+
+.credit-text b {
+  color: #ffffff;
+}
